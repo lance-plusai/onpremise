@@ -242,7 +242,7 @@ SENTRY_OPTIONS['filestore.backend'] = 'filesystem'
 SENTRY_OPTIONS['filestore.options'] = {
     'location': env('SENTRY_FILESTORE_DIR'),
 }
-
+SENTRY_FEATURES['auth:register'] = True
 ##############
 # Web Server #
 ##############
