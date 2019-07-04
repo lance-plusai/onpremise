@@ -53,8 +53,8 @@ services:
       - "445:443"
     volumes:
       - ./sentry-nginx.conf:/etc/nginx/conf.d/sentry-nginx.conf:ro
-      - ./ssl:/etc/nginx/ssl:ro
-
+      - /home/plusai/data/ssl/plusai.co.crt:/etc/nginx/ssl/nginx.crt:ro
+      - /home/plusai/data/ssl/plusai.co.key:/etc/nginx/ssl/nginx.key:ro
   web:
     <<: *defaults
 
